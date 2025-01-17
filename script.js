@@ -52,7 +52,7 @@ A wise man can learn more from a foolish question than a fool can learn from a w
         
     }
 
-    if (count === 100) {
+    if (count === 101) {
 
         messageBox.innerHTML = `<h2> Hmnnn... Interesting 🤔🤔🤔</h2>`
     }
