@@ -16,7 +16,6 @@ body {
     gap: 20px;
     min-height: 100vh;
     color: hsl(0, 0%, 7%);
-    font-family: 'Figtree';
     line-height: 150%;
     letter-spacing: 0px;
 }
@@ -42,14 +41,8 @@ body {
     flex-direction: column;
 }
 
-.card-desc {
-    display: grid;
-    gap: 15px;
-}
-
 .message-div h1, h2, h3, h4 {
     padding: 4px 12px;
-    font-family: 'Figtree';
     font-weight: 800;
     font-size: 14px;
     line-height: 150%;
@@ -57,13 +50,6 @@ body {
     border-radius: 4px;
 }
 
-.date {
-    font-family: 'Figtree';
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 150%;
-    letter-spacing: 0px;
-}
 
 .message-div h2 {
     font-size: 24px;
@@ -73,12 +59,6 @@ body {
 .message-div h3 {
     font-size: 22px;
     font-weight: 700;
-    font-family: 'Figtree';
-}
-
-.card-copy {
-    font-size: 16px;
-    color: hsl(0, 0%, 42%);
 }
 
 .button {
@@ -115,18 +95,6 @@ body {
     font-weight: 800;
 }
 
-.attribution { 
-    font-size: 11px; 
-    text-align: center; 
-    padding-top: 50px;
-    color: hsl(228, 12%, 48%); 
-}
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
-    text-decoration: none;
-}
-
-
 /* MOBILE VERSION */
 
 @media (max-width: 375px) {
@@ -134,20 +102,6 @@ body {
     .card {
         width: 327px;
         height: 501px;
-    }
-
-    .card img {
-        width: 279px;
-        height: 200px;
-        border-radius: 10px;
-    }
-
-    .card-desc h2 {
-        font-size: 20px;
-    }
-
-    .date {
-        font-size: 12px;
     }
 
     .author {
