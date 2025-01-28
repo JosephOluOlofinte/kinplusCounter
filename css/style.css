@@ -29,11 +29,12 @@ body {
     box-shadow: 5px 5px 2px hsl(0, 0%, 7%);
     display: grid;
     gap: 24px;
-    padding: 24px;
+    padding-inline: 24px;
+    padding-block: 15px;
 }
 
 .card .message-div {
-    height: 300px;
+    height: 340px;
     border-radius: 10px;
     text-align: center;
     display: flex;
