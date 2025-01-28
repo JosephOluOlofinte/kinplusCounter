@@ -6,24 +6,26 @@ let body = document.querySelector('.body')
 let countMessage = document.querySelector('.count-message')
 let button = document.querySelector('.button');
 let messageDiv = document.querySelector('.message-div');
+let iniMsg = document.querySelector('#initial-message');
 
 const messageBox = document.createElement("div")
-        messageBox.className = "main"
-        messageBox.innerHTML = `<h2>Welcome to the game!</h2> <br/> This is stage 1. You are a rookie. Let's see how far you can go.`
+
 
 button.addEventListener('click', countClicks)
 
 
 function countClicks() {
 
-    countMessage.innerHTML = `Click count: ${count}. <br/> <br/> Click 10 times for your message.`
+    countMessage.innerHTML = `Click count: ${count}. <br/> <br/> Click 10 times for your surprise.`
     button.innerHTML = `Click me!`
+    iniMsg.innerHTML =``
     ++count;
 
     if (count >= 11) {
 
-        countMessage.innerHTML = `Yay! You've clicked ${count - 1} times.`
-         messageDiv.appendChild(messageBox)
+        countMessage.innerHTML = `Yay! You've clicked ${count - 1} times.`;
+        messageDiv.appendChild(messageBox);
+        messageBox.innerHTML = `<h2>Welcome to the game!</h2> <br/> This is stage 1. You are a rookie. Let's see how far you can go.`;
         
     } 
     
