@@ -5,6 +5,7 @@ let count = 0;
 let body = document.querySelector('.body')
 let countMessage = document.querySelector('.count-message')
 let button = document.querySelector('.button');
+let messageDiv = document.querySelector('.message-div');
 
 const messageBox = document.createElement("div")
         messageBox.className = "main"
@@ -21,8 +22,8 @@ function countClicks() {
 
     if (count >= 11) {
 
-        countMessage.innerHTML = `Yay! You've clicked ${count - 1} times. <br/> <br/> Keep clicking; I still have more!.`
-         document.body.appendChild(messageBox)
+        countMessage.innerHTML = `Yay! You've clicked ${count - 1} times.`
+         messageDiv.appendChild(messageBox)
         
     } 
     

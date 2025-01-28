@@ -1,0 +1,163 @@
+@import url('fonts.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 100vh;
+    color: hsl(0, 0%, 7%);
+    font-family: 'Figtree';
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+.card {
+    background-color: #ffffff;
+    width: 384px;
+    height: 522px;
+    border: 1px solid hsl(0, 0%, 7%);
+    border-radius: 15px;
+    box-shadow: 5px 5px 2px hsl(0, 0%, 7%);
+    display: grid;
+    gap: 24px;
+    padding: 24px;
+}
+
+.card .message-div {
+    height: 200px;
+    border-radius: 10px;
+}
+
+.card-desc {
+    display: grid;
+    gap: 15px;
+}
+
+.card-desc h1 {
+    padding: 4px 12px;
+    background-color: hsl(47, 88%, 63%);
+    font-family: 'Figtree';
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    width: max-content;
+    border-radius: 4px;
+}
+
+.date {
+    font-family: 'Figtree';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+.card-desc h2 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.card h2:hover {
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+
+.card-copy {
+    font-size: 16px;
+    color: hsl(0, 0%, 42%);
+}
+
+.button {
+    background-color: hsl(47, 88%, 63%);
+    color: black;
+    height: max-content;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid black;
+    box-shadow: 3px 3px 4px hsl(0, 0%, 7%);
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 500ms;
+}
+
+.button:hover {
+    box-shadow: none;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.author img {
+    height: 32px;
+    width: 32px;
+}
+
+.author p {
+    font-weight: 800;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    padding-top: 50px;
+    color: hsl(228, 12%, 48%); 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+
+
+/* MOBILE VERSION */
+
+@media (max-width: 375px) {
+    
+    .card {
+        width: 327px;
+        height: 501px;
+    }
+
+    .card img {
+        width: 279px;
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .card-desc h2 {
+        font-size: 20px;
+    }
+
+    .date {
+        font-size: 12px;
+    }
+
+    .author {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    .author img {
+        height: 32px;
+        width: 32px;
+    }
+    
+    .author p {
+        font-weight: 800;
+    }
+    
+  }
