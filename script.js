@@ -1,6 +1,3 @@
-
-
-
 let count = 0;
 let body = document.querySelector('.body');
 let countMessage = document.querySelector('.count-message');
