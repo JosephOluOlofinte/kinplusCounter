@@ -4,6 +4,7 @@ let countMessage = document.querySelector('.count-message');
 let button = document.querySelector('.button')
 let messageDiv = document.querySelector('.message-div');
 let iniMsg = document.querySelector('#initial-message');
+const welcome = document.querySelector('#welcome'); 
 
 const messageBox = document.createElement("div");
 
@@ -13,7 +14,8 @@ button.addEventListener('click', countClicks)
 
 function countClicks() {
 
-    countMessage.innerHTML = `Click count: ${count}. <br/> <br/> Click 10 times for your surprise.`
+    countMessage.innerHTML = `Click count: ${count}. <br/> <br/> Click 10 times for your surprise.`;
+    welcome.remove();
     button.innerHTML = `Click me!`
     iniMsg.innerHTML =``
     ++count;
